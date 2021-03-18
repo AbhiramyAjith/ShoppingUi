@@ -1,12 +1,17 @@
 import React from 'react';
-import {StyleSheet, Image} from 'react-native';
+import {StyleSheet, ImageBackground} from 'react-native';
+import ImageOverlay from './ImageOverlay';
 
 export default class Banner extends React.Component {
   render () {
     return (
-     <Image source ={require('../img/img1.jpg')}
-     style={styles.banner}
-     />
+     <ImageBackground source ={require('../img/img7.jpg')}
+      style={styles.banner}>
+         <ImageOverlay
+          header='Explore Now'
+          paragraph=''/>
+
+     </ImageBackground>
     );
   }
 }
@@ -14,6 +19,7 @@ export default class Banner extends React.Component {
 const styles = StyleSheet.create({
   banner: {
     width: '100%',
+    height: 200,
     alignItems:'center',
     justifyContent: 'center',
   }

@@ -8,17 +8,39 @@ export default class ContentContainer extends React.Component {
         <View style={styles.contentContainer}>
 
              <View style={styles.col2}>
-                 <CustomImage imageSource={require('../img/img3.jpg')} />
+                 <CustomImage 
+                 imageSource={require('../img/img3.jpg')} 
+                 header='Bags'/>
              </View>
 
              <View style={styles.col1}>
-             <CustomImage imageSource={require('../img/img4.jpg')} />
+                <CustomImage 
+                imageSource={require('../img/img4.jpg')} 
+                header='Shoes'/>
              </View>
 
              <View style={styles.contentBanner}>
-             <CustomImage imageSource={require('../img/img5.jpg')} />
+                 <CustomImage 
+                 imageSource={require('../img/img5.jpg')} 
+                 header='Watches'/>
              </View>
 
+             <View style={styles.col1}>
+                 <CustomImage 
+                 imageSource={require('../img/img10.jpg')} 
+                 header='Kurta'/>
+             </View>
+
+             <View style={styles.col2}>
+             <CustomImage imageSource={require('../img/img9.jpg')} 
+             header='Smart Phones'/>
+             </View>
+
+             <View style={styles.contentBanner}>
+             <CustomImage 
+             imageSource={require('../img/img11.jpg')} 
+             header='Wedding Wears'/>
+             </View>
         </View>
     );
   }
